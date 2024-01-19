@@ -1,0 +1,28 @@
+.toDo__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    width: 600px;
+    /* height: 100px; */
+    margin: auto;
+}
+
+.toDo__container .toDo__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.toDo__container .toDo__list .toDo__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
