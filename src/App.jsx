@@ -2,10 +2,12 @@ import "./App.css";
 import Item from "./Item";
 import { useState } from "react";
 
+
 const App = () => {
   const [toDoList, setToDoList] = useState([]);
   const [toDo, setToDo] = useState("");
 
+  // handltodo function
   const handleToDO = (e) => {
     e.preventDefault();
     setToDoList([...toDoList, toDo]);
@@ -38,7 +40,7 @@ const App = () => {
       <div className="toDo__list">
         {toDoList.map((item, index) => (
           <div key={index} className="toDo__item-container">
-            <Item item={item} />
+            <Item item={item} /> 
             <button
               className="toDo__button"
               onClick={() => handleDelete(index)}
